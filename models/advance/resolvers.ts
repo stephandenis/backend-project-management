@@ -8,6 +8,14 @@ const advanceResolvers = {
         .populate('createdBy');
       return advances;
     },
+    filterAdvance: async (parent, args) => {
+      const filteredAdvance = await AdvanceModel.find({
+        project: args.projectId,
+      })
+        .populate('project')
+        .populate('createdBy');
+      return filteredAdvance;
+    },
   },
   Mutation: {
     createAdvance: async (parent, args) => {
