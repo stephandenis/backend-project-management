@@ -20,6 +20,7 @@ const projectTypes = gql`
     phase: ProjectPhase!
     leader: User!
     objectives: [Objective]
+    advances: [Advance]
   }
   type Query {
     Projects: [Project]

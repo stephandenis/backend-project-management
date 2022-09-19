@@ -17,7 +17,7 @@ enum ProjectStatus {
 
 enum ProjectPhase {
   STARTED = 'STARTED',
-  DEVELOPMENT = 'DESARROLLO',
+  DEVELOPMENT = 'DEVELOPMENT',
   COMPLETED = 'COMPLETED',
   NULL = '',
 }
