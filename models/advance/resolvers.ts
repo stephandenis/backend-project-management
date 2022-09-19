@@ -10,10 +10,10 @@ const advanceResolvers = {
   Mutation: {
     createAdvance: async (parent, args) => {
       const createdAdvance = AdvanceModel.create({
-        date: args.date!,
-        description: args.description!,
-        project: args.project!,
-        createdBy: args.createdBy!,
+        date: args.date,
+        description: args.description,
+        project: args.project,
+        createdBy: args.createdBy,
       });
       return createdAdvance;
     },
