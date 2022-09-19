@@ -3,7 +3,9 @@ import { AdvanceModel } from './advance';
 const advanceResolvers = {
   Query: {
     Advances: async (parent, args) => {
-      const advances = await AdvanceModel.find();
+      const advances = await AdvanceModel.find()
+        .populate('project')
+        .populate('createdBy');
       return advances;
     },
   },
