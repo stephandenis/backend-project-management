@@ -25,6 +25,12 @@ const enumTypes = gql`
     GENERAL
     SPECIFIC
   }
+
+  enum InscriptionStatus {
+    ACCEPTED
+    REJECTED
+    PENDING
+  }
 `;
 
 export { enumTypes };

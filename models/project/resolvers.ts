@@ -5,7 +5,8 @@ const projectResolvers = {
     Projects: async (parent, args) => {
       const projects = await ProjectModel.find()
         .populate('leader')
-        .populate('advances');
+        .populate('advances')
+        .populate('inscriptions');
       return projects;
     },
   },

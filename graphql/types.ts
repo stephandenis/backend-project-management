@@ -3,6 +3,8 @@ import { enumTypes } from '../models/enums/types';
 import { userTypes } from '../models/user/types';
 import { projectTypes } from '../models/project/types';
 import { advanceTypes } from '../models/advance/types';
+import { inscriptionTypes } from '../models/inscription/types';
+
 const globalTypes = gql`
   scalar Date
 `;
@@ -13,4 +15,5 @@ export const types = [
   userTypes,
   projectTypes,
   advanceTypes,
+  inscriptionTypes,
 ];

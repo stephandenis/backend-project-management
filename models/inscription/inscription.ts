@@ -19,11 +19,11 @@ const inscriptionSchema = new Schema<Inscription>({
   },
   entryDate: {
     type: Date,
-    required: true,
+    required: false,
   },
   exitDate: {
     type: Date,
-    required: true,
+    required: false,
   },
   project: {
     type: Schema.Types.ObjectId,

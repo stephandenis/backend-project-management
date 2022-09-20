@@ -30,6 +30,7 @@ enum ObjectiveType {
 enum InscriptionStatus {
   ACCEPTED = 'ACCEPTED',
   REJECTED = 'REJECTED',
+  PENDING = 'PENDING',
 }
 
 export {
