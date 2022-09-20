@@ -19,7 +19,7 @@ enum ProjectPhase {
   STARTED = 'STARTED',
   DEVELOPMENT = 'DEVELOPMENT',
   COMPLETED = 'COMPLETED',
-  NULL = '',
+  NULL = 'NULL',
 }
 
 enum ObjectiveType {

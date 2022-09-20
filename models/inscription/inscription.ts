@@ -15,6 +15,7 @@ const inscriptionSchema = new Schema<Inscription>({
   status: {
     type: String,
     enum: InscriptionStatus,
+    default: InscriptionStatus.PENDING,
     required: true,
   },
   entryDate: {
