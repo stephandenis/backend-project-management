@@ -49,14 +49,18 @@ const userResolvers = {
         status: any;
       }
     ) => {
-      const editedUser = await UserModel.findByIdAndUpdate(args._id, {
-        name: args.name,
-        lastName: args.lastName,
-        identification: args.identification,
-        email: args.email,
-        role: args.role,
-        status: args.status,
-      });
+      const editedUser = await UserModel.findByIdAndUpdate(
+        args._id,
+        {
+          name: args.name,
+          lastName: args.lastName,
+          identification: args.identification,
+          email: args.email,
+          role: args.role,
+          status: args.status,
+        },
+        { new: true }
+      );
 
       return editedUser;
     },

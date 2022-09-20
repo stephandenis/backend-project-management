@@ -22,7 +22,8 @@ const inscriptionResolvers = {
         {
           status: 'APPROVED',
           entryDate: Date.now(),
-        }
+        },
+        { new: true }
       );
       return approvedInscription;
     },
