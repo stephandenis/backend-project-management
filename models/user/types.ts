@@ -29,8 +29,7 @@ const userTypes = gql`
       lastName: String!
       identification: String!
       email: String!
-      role: Role!
-      status: UserStatus
+      status: UserStatus!
     ): User
     deleteUser(_id: String, email: String): User
   }
