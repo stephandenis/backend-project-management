@@ -21,7 +21,7 @@ const inscriptionTypes = gql`
       developer: String!
     ): Inscription
 
-    approveInscription(id: String!): Inscription
+    approveInscription(_id: String!): Inscription
   }
 `;
 

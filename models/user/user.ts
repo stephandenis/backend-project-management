@@ -26,7 +26,7 @@ const userSchema = new Schema<User>({
       //     return false;
       //   }
       // },
-      message: 'El formato del email electrónico está malo.',
+      message: 'Wrong user input.',
     },
   },
   identification: {

@@ -18,7 +18,7 @@ const inscriptionResolvers = {
     },
     approveInscription: async (parent, args) => {
       const approvedInscription = await InscriptionModel.findByIdAndUpdate(
-        args.id,
+        args._id,
         {
           status: 'APPROVED',
           entryDate: Date.now(),

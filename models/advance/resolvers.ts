@@ -10,7 +10,7 @@ const advanceResolvers = {
     },
     filterAdvance: async (parent, args) => {
       const filteredAdvance = await AdvanceModel.find({
-        project: args.projectId,
+        project: args._id,
       })
         .populate('project')
         .populate('createdBy');
